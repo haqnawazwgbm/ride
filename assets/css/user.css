@@ -1,0 +1,108 @@
+body{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16px;
+
+}
+.user{
+	margin-top: 20px;
+}
+.form-bg{
+	background: red;
+}
+.profile-area{
+	border:1px solid #ccc;
+	padding:20px;
+	box-sizing: border-box;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.formate{
+	color:#ccc;
+	margin-left: 50px;
+}
+.good-img{
+	width: 100px;
+	height: 100px;
+}
+.special-color{
+	color:#33F70C!important;
+}
+.cnic{
+	width: 150PX;
+	height: 80px;
+}
+.heading-all{
+	color:#6666;
+}
+.verify-heading{
+	font-size: 17px;
+	font-weight: 600;
+	color:#727272;
+}
+.btn-common{
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	background: #57CC4F;
+	border:0px;
+	font-weight: 500;
+	margin-top: 30px;
+}
+.verification-media{
+-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	border:0px;
+	font-weight: 500;
+	margin-top: 30px;
+}
+.verify-icon{
+	color:orange;
+}
+.verification-text{
+	color: #727272;
+}
+.dashboard-list a:hover{
+	background: orange;
+	color:#fff;
+}
+.dashboard-nav{
+	/*background: #ff7300;*/
+	/*border:0px;*/
+}
+.dashboard-nav li a{
+	/*color: #fff!important;*/
+}
+.check{
+	display: none;
+}
+.check + label{
+background: url("../user_img/smoking-icon.png") no-repeat;
+/*background-size: 50%;*/
+height: 40px;
+width: 40px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+.check:checked + label
+{
+background: url("../user_img/smoking-icon.png") no-repeat;
+/*background-size: 50%;*/
+height: 40px;
+width: 40px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+.payment-img{
+	width: 60px;
+	height: 60px;
+}

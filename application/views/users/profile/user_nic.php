@@ -1,0 +1,80 @@
+ <?php $this->load->view('users/includes/header'); ?>
+<div class="container main bg-main">
+<?php include_once 'include/top_menu.php'; ?>
+
+<div class="container user">
+  <div class="row">
+    <div class="col-md-3">
+<?php include 'include/left_menu.php'; ?>
+    </div><!-- col -->
+  <div class="col-md-9">
+      <h3>Photo</h3><hr>
+      <div class="profile-area">
+      <div class="row">
+       <div class="col-md-6 text-center">
+         <h4>Upload Front CNIC Copy</h4>
+         <hr>
+     
+         <form action="<?= base_url(); ?>profile/upload_user_front_nic" method="POST" enctype="multipart/form-data">
+             <div class="form-group">
+                 <div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-new thumbnail" style="width: 150px; height: 150px;-webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;">
+  <input type="hidden" value="<?= $user['id']; ?>" name="id">
+    <img src="<?= base_url() . 'uploads/' . $user['nic_front_img']; ?>" alt="...">
+  </div>
+  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+  <div>
+    <span class="btn btn-default btn-file" style="left:5%;"><span class="fileinput-new">Upload CNIC</span><span class="fileinput-exists">Change</span><input type="file" name="userfile"></span>
+    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+  </div>
+  <button type="submit" name="userFrontNic" value="true">Upload</button>
+</div>
+             </div><!-- form-group -->
+             <div class="form-group">
+               <p class="formate">jpg, png, gif</p>
+             </div><!-- form-group -->
+         </form>   
+       </div>
+
+       <div class="col-md-6 text-center">
+         <h4>Upload Back CNIC Copy</h4>
+         <hr>
+     
+         <form action="<?= base_url(); ?>profile/upload_user_back_nic" method="POST" enctype="multipart/form-data">
+             <div class="form-group">
+                 <div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-new thumbnail" style="width: 150px; height: 150px;-webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;">
+  <input type="hidden" value="<?= $user['id']; ?>" name="id">
+    <img src="<?= base_url() . 'uploads/' . $user['nic_back_img']; ?>" alt="...">
+  </div>
+  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+  <div>
+    <span class="btn btn-default btn-file" style="left:5%;"><span class="fileinput-new">Upload CNIC</span><span class="fileinput-exists">Change</span><input type="file" name="userfile"></span>
+    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+  </div>
+  <button type="submit" name="userBackNic" value="true">Upload</button>
+</div>
+             </div><!-- form-group -->
+             <div class="form-group">
+               <p class="formate">jpg, png, gif</p>
+             </div><!-- form-group -->
+         </form>   
+       </div>
+          
+        
+      </div><!-- row -->
+    </div><!-- profile-area -->
+
+    </div><!-- col -->
+  </div><!-- row -->
+</div><!-- container -->
+<div class="support">
+  <?php $this->load->view('users/includes/footer'); ?>
